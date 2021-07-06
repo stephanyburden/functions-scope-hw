@@ -15,9 +15,6 @@ Topics: Problem solving with functions<br>
 
 Fork/clone this repo as directed by your instructor. Inside the repo, create the usual folder structure. Write your answers in `app.js`.
 
-
-
-
 ## 1. Verbal questions
 
 Write answers to the following questions as comments. 
@@ -32,16 +29,20 @@ The commit message should read: <br>
 "Commit 1 - Verbal questions".
 <hr>
 
-## 2. Palindrome again.
-Write a function `checkPalindrome` that accepts a single argument, a string. Yes, you've done it before, but do it again. Later in this assignment we're gonna beef up our palindrome function some. See if you can do it without looking back at your previous answer. The function should return true if the string is a palindrome, false if not. Make sure your function will give the correct answer for words with **capital letters**.
+## 2. Palindrome.
+Write a function `checkPalindrome` that accepts a single argument, a string. Later in this assignment we're gonna beef up our palindrome function some. The function should return true if the string is a palindrome, false if not. A _palindrome_ is a word that is the same spelled backwards and forwards, for example: Racecar. Make sure your function will give the correct answer for words with **capital letters**.
 
 ```javascript
-console.log(checkPalindrome("Radar"));
- => true
+const wordIsPaindrome = checkPalindrome("Radar");
+
+console.log(wordIsPaindrome);
+=> true
 ```
 
 ```javascript
-console.log(checkPalindrome("Borscht"));
+const wordIsPaindrome = checkPalindrome("Cat");
+
+console.log(wordIsPaindrome);
 => false
 ```
 
@@ -51,44 +52,36 @@ The commit message should read: <br>
 "Commit 2 - Palindrome".
 <hr>
 
-## 3. Digit Sum
-Write a function `sumDigits` that accepts a number and returns the sum of its digits.
+## 2. Check a List
+
+Write a function `checkForStudent` that takes 2 parameters, a student's name and an array of students, and checks if the student's name is in the array. If the student's name is included in the array the function should return true. If the name is not included in the array the function should return false.
+
 ```js
-console.log(sumDigits(42));
-=> 6;
+const studentIncluded =  checkForStudent('Sally', ['Sally', 'Kyle']);
+
+console.log(studentIncluded);
+=> true
 ```
 
-<hr>
-&#x1F534; **Commit your work.** <br>
-The commit message should read: <br>
-"Commit 3 - Digit Sum".
-<hr>
-
-## 4. Pythagoras
-Write a function `calculateSide` that takes two arguments: `sideA` and `sideB`, and returns the solution for sideC using the Pythagorean theorem.
-
-_hint:_ discover the Pythagorean Theorem on a website called google.com
-
-_hint:_ checkout the [Math methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) in javascript
-
-**_restriction_**: for this problem, do NOT use `Math.hypot()` (but for the rest of time, once you've done this problem feel free)
 ```js
-console.log(calculateSide(8, 6));
-=> 10
-```
-<hr>
-&#x1F534; **Commit your work.** <br>
-The commit message should read: <br>
-"Commit 4 - Pythagoras".
-<hr>
+const studentIncluded =  checkForStudent('Ron', ['Sally', 'Kyle']);
 
-## 5. Sum Array
+console.log(studentIncluded);
+=> false
+```
+
+
+## 3. Sum Array
 Write a function `sumArray` that takes an **array** as an argument.
-The array should contain numbers. The function should return the sum of the numbers in the array. **Do not use `.reduce()`**.
+The array should contain numbers. The function should return the sum of the numbers in the array.
+
+**Try solving it using a loop instead of using [`.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)**.
 
 Expected result:
 ```javascript
-console.log(sumArray([1, 2, 3, 4, 5, 6]));
+const sum = sumArray([1, 2, 3, 4, 5, 6]);
+
+console.log(sum);
 => 21
 ```
 <hr>
@@ -96,26 +89,6 @@ console.log(sumArray([1, 2, 3, 4, 5, 6]));
 The commit message should read: <br>
 "Commit 5 - Sum Array".
 <hr>
-
-## 6. Prime Numbers
-A Prime number is a number that is not evenly divisible by another number except 1 and itself. If you want to read more deeply about it, [go here](https://en.wikipedia.org/wiki/Prime_number).
-To test whether a number is Prime, you only need to test as far as the **square root** of that number. This is advisable for optimization and testing large numbers.
-
-### Step One
-Write a function called `checkPrime` that will test whether a number is Prime. The function will return true (Boolean) if Prime, false if not.
-_Hint:_ Check every number up to the square root. To do this, try a _for loop_.
-
-### Step Two
-Write another function called `printPrimes` that will print (console log) all the Primes up to an arbitrary limit. For example, if you invoke your function with `printPrimes(97)`, it will print all the Prime numbers up to and including 97.
-This function can **call on** the previous `checkPrime` function.
-</details>
-
-<hr>
-&#x1F534; **Commit your work.** <br>
-The commit message should read: <br>
-"Commit 6 - Prime Numbers".
-<hr>
-
 
 ## CSS
 Watch the following three videos on CSS:
@@ -128,18 +101,63 @@ You will need to have watched these videos for tomorrow's lab.
 
 # Hungry for more?
 
-1. Complete the afternoon lab. 
+## Digit Sum
+Write a function `sumDigits` that accepts a number and returns the sum of its digits.
+```js
+const sum = sumDigits(42);
 
-2. Write a function `insertDash` that accepts a number as a parameter and returns a string with a dash inserted between any consecutive **odd numbers**. There should not be a dash at the end, it goes only between numbers.
+console.log(sum);
+=> 6;
+```
+
+    Commit.
+
+## Pythagoras
+Write a function `calculateSide` that takes two arguments: `sideA` and `sideB`, and returns the solution for sideC using the Pythagorean theorem.
+
+_hint:_ discover the Pythagorean Theorem on a website called google.com
+
+_hint:_ checkout the [Math methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) in javascript
+
+**For this problem, do not use `Math.hypot()`**
+```js
+const sideC = calculateSide(8, 6);
+
+console.log(sideC);
+=> 10
+```
+
+    Commit.
+
+## Prime Numbers
+A Prime number is a number that is not evenly divisible by another number except 1 and itself. If you want to read more deeply about it, [go here](https://en.wikipedia.org/wiki/Prime_number).
+To test whether a number is Prime, you only need to test as far as the **square root** of that number. This is advisable for optimization and testing large numbers.
+
+    Commit.
+
+### Step One
+Write a function called `checkPrime` that will test whether a number is Prime. The function will return true (Boolean) if Prime, false if not.
+_Hint:_ Check every number up to the square root. To do this, try a _for loop_.
+
+### Step Two
+Write another function called `printPrimes` that will print (console log) all the Primes up to an arbitrary limit. For example, if you invoke your function with `printPrimes(97)`, it will print all the Prime numbers up to and including 97.
+This function can **call on** the previous `checkPrime` function.
+
+## Insert Dash
+
+Write a function `insertDash` that accepts a number as a parameter and returns a string with a dash inserted between any consecutive **odd numbers**. There should not be a dash at the end, it goes only between numbers.
 ```javascript
-console.log(insertDash(454793));
+const numWithDashes = insertDash(454793);
 
+console.log(numWithDashes);
 => 4547-9-3
 ```
 
     Commit.
 
-3. Write a function `reverseString` that takes a string as a parameter and returns that string with the letters reversed **without using `.split()`, `.reverse()`, or `.join()`**.
+## Reverse a String
+
+Write a function `reverseString` that takes a string as a parameter and returns that string with the letters reversed **without using `.split()`, `.reverse()`, or `.join()`**.
 
     Commit.
 
@@ -159,4 +177,6 @@ console.log(insertDash(454793));
 
 7. You still want more?!?! Do you even sleep? Create an account on [Project euler](https://projecteuler.net/archives) and keep working on those problems.
 
+## More Practice
 
+For more practice with functions, check out the website, [Codewars](https://www.codewars.com/). Codewars is a code challenge platform with hundreds of challenges of different difficulty levels. Create an account, start on the easiest difficulty level, and slowly work your way up.
