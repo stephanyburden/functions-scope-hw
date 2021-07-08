@@ -87,7 +87,7 @@ console.log(sum);
 <hr>
 &#x1F534; **Commit your work.** <br>
 The commit message should read: <br>
-"Commit 5 - Sum Array".
+"Commit 3 - Sum Array".
 <hr>
 
 ## CSS
@@ -97,7 +97,7 @@ Watch the following three videos on CSS:
 - [Second CSS video - 11 minutes](https://www.youtube.com/watch?v=UMMHsQPmfug&index=4&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
 - [Third CSS video - 17 minutes](https://www.youtube.com/watch?v=g0Aq2kP5-CY&index=5&list=PLdnONIhPScST0Vy4LrIZiYKpFNoxgyH7J)
 
-You will need to have watched these videos for tomorrow's lab.
+You will need to have watched these videos for tomorrow's lesson.
 
 # Hungry for more?
 
