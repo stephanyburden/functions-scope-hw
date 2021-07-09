@@ -23,12 +23,6 @@ Write answers to the following questions as comments.
 2. Within a function, what is the difference between **return** and **console.log**?
 3. What are the implications of the ability of a function to return a value?
 
-<hr>
-&#x1F534; **Commit your work.** <br>
-The commit message should read: <br>
-"Commit 1 - Verbal questions".
-<hr>
-
 ## 2. Palindrome.
 Write a function `checkPalindrome` that accepts a single argument, a string. Later in this assignment we're gonna beef up our palindrome function some. The function should return true if the string is a palindrome, false if not. A _palindrome_ is a word that is the same spelled backwards and forwards, for example: Racecar. Make sure your function will give the correct answer for words with **capital letters**.
 
@@ -46,15 +40,9 @@ console.log(wordIsPaindrome);
 => false
 ```
 
-<hr>
-&#x1F534; **Commit your work.** <br>
-The commit message should read: <br>
-"Commit 2 - Palindrome".
-<hr>
+## 3. Check a List
 
-## 2. Check a List
-
-Write a function `checkForStudent` that takes 2 parameters, a student's name and an array of students, and checks if the student's name is in the array. If the student's name is included in the array the function should return true. If the name is not included in the array the function should return false.
+Write a function `checkForStudent` that takes 2 parameters, a student's name and an array of students, and checks if the student's name is in the array. If the student's name is included in the array the function should return true. If the name is not included in the array the function should return false. See if you can use a for loop to do this. For extra practice look into how you could do this without a for loop.
 
 ```js
 const studentIncluded =  checkForStudent('Sally', ['Sally', 'Kyle']);
@@ -71,7 +59,7 @@ console.log(studentIncluded);
 ```
 
 
-## 3. Sum Array
+## 4. Sum Array
 Write a function `sumArray` that takes an **array** as an argument.
 The array should contain numbers. The function should return the sum of the numbers in the array.
 
@@ -84,11 +72,6 @@ const sum = sumArray([1, 2, 3, 4, 5, 6]);
 console.log(sum);
 => 21
 ```
-<hr>
-&#x1F534; **Commit your work.** <br>
-The commit message should read: <br>
-"Commit 3 - Sum Array".
-<hr>
 
 ## CSS
 Watch the following three videos on CSS:
